@@ -1,0 +1,6 @@
+type Trainee {
+    id : ID
+    firstname : String
+    lastname : String
+    email : String
+}
