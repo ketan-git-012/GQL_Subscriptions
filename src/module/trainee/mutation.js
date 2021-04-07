@@ -2,9 +2,8 @@
 const { argsToArgsConfig } = require('graphql/type/definition');
 const { Subscription , NEW_TRAINEE } = require('./subscriptions');
 const {trainee} = require('./../../service/user');
-const { PubSub } =require('apollo-server-express');
 
-const psb = new PubSub();
+import psb from './../pubsub';
 
 const Mutation = {
     createTrainee: (root, args, {pubSub}, info)=>{
